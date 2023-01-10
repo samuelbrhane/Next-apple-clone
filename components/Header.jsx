@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <>
       <div className="bg-black h-12 fixed top-0 text-gray-200 w-full z-50">
-        <div className="px-4 py-2 flex items-center justify-between h-full w-full text-2xl cursor-pointer">
+        <div className="px-4 py-2 md:px-12 lg:px-20 flex items-center justify-between h-full w-full text-2xl cursor-pointer">
           <div
             className="md:hidden"
             onClick={() => setShowMenuProducts(!showMenuProducts)}

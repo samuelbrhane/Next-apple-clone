@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { Header } from "../components";
+import { Header, Iphone14Pro } from "../components";
+import { AiFillApple } from "react-icons/ai";
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
       <main>
         {/* Header */}
         <Header />
+
+        {/* iPhone 14 Pro*/}
+        <Iphone14Pro />
       </main>
     </>
   );
