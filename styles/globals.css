@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .showContents {
+    @apply top-12 left-0 right-0 bottom-0 duration-[1s];
+  }
+
+  .hideContents {
+    @apply top-[-999px] left-0  right-0 transition-all duration-[2.5s];
+  }
+}
