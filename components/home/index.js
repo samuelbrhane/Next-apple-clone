@@ -1,3 +1,4 @@
 import HomeImage from "./HomeImage";
+import HeroImage from "./HeroImage";
 
-export { HomeImage };
+export { HomeImage, HeroImage };

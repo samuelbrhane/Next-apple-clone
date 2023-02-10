@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Header } from "../components";
-import { HomeImage } from "../components/home";
+import { HeroImage, HomeImage } from "../components/home";
 
 export default function Home() {
   return (
@@ -32,6 +32,36 @@ export default function Home() {
           background={true}
         />
       </main>
+
+      {/* store images */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:px-4 my-4 h-[85vh] md:h-[65vh] lg:h-[80vh]">
+        <HeroImage
+          name="WATCH"
+          title="A healthy leap ahead."
+          image="/img/apple_watch.jpg"
+          text={false}
+        />
+        <HeroImage
+          name="HomePod"
+          title="Profound sound."
+          image="/img/homepod.jpg"
+          text={false}
+        />
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:px-4 h-[85vh] md:h-[65vh] lg:h-[80vh] mb-4">
+        <HeroImage
+          name="Creativity and community"
+          title="Explore the new Black Unity watch."
+          image="/img/promo_bhm.jpg"
+          text={false}
+        />
+        <HeroImage
+          name="Valentine's Day"
+          title="Sealed with a gift."
+          image="/img/promo_valentines.jpg"
+          text={true}
+        />
+      </div>
     </>
   );
 }
