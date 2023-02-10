@@ -2,6 +2,7 @@ import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { AiFillApple, AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
 import { BsBriefcase } from "react-icons/bs";
 import { useState } from "react";
+import Link from "next/link";
 
 const Header = () => {
   const [showMenuProducts, setShowMenuProducts] = useState(false);
@@ -18,12 +19,11 @@ const Header = () => {
 
           <AiFillApple />
           <div className="hidden md:flex flex-grow items-center gap-6  mx-2 justify-center text-[16px] text-gray-300 font-light">
-            <p>Mac</p>
-            <p>iPad</p>
-            <p>iPhone</p>
-            <p>Watch</p>
-            <p>Airpods</p>
-            <p>Accessories</p>
+            <Link href="/Mac">Mac</Link>
+            <Link href="/iPad">iPad</Link>
+            <Link href="/iPhone">iPhone</Link>
+            <Link href="/Watch">Watch</Link>
+            <Link href="/Airpods">Airpods</Link>
           </div>
           <div className="flex items-center gap-6 lg:gap-8 text-xl">
             <AiOutlineSearch className="hidden md:inline" />
@@ -49,12 +49,21 @@ const Header = () => {
           </div>
         </div>
         <div className="px-10 flex flex-col gap-6 text-xl font-light pt-4 text-gray-300">
-          <p className="border-b-2 pb-1 cursor-pointer">Mac</p>
-          <p className="border-b-2 pb-1 cursor-pointer">iPad</p>
-          <p className="border-b-2 pb-1 cursor-pointer">iPhone</p>
-          <p className="border-b-2 pb-1 cursor-pointer">Watch</p>
-          <p className="border-b-2 pb-1 cursor-pointer">Airpods</p>
-          <p className="border-b-2 pb-1 cursor-pointer">Accessories</p>
+          <Link href="/Mac" className="border-b-2 pb-1 cursor-pointer">
+            Mac
+          </Link>
+          <Link href="/iPad" className="border-b-2 pb-1 cursor-pointer">
+            iPad
+          </Link>
+          <Link href="/iPhone" className="border-b-2 pb-1 cursor-pointer">
+            iPhone
+          </Link>
+          <Link href="/Watch" className="border-b-2 pb-1 cursor-pointer">
+            Watch
+          </Link>
+          <Link href="/Airpods" className="border-b-2 pb-1 cursor-pointer">
+            Airpods
+          </Link>
         </div>
       </div>
     </>
