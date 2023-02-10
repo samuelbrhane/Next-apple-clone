@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Header } from "../components";
+import { Footer, Header } from "../components";
 import { HeroImage, HomeImage } from "../components/home";
 
 export default function Home() {
@@ -76,6 +76,7 @@ export default function Home() {
           background={true}
         />
       </div>
+      <Footer />
     </>
   );
 }
