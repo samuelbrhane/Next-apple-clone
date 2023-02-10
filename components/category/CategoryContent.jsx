@@ -1,5 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
-import { macData } from "../../utils/categories";
+import {
+  macData,
+  watchData,
+  iPadData,
+  iPhoneData,
+  airPodsData,
+} from "../../utils/categories";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const CategoryContent = ({ category }) => {
@@ -9,8 +15,20 @@ const CategoryContent = ({ category }) => {
 
   useEffect(() => {
     switch (category) {
-      case "Mac":
+      case "mac":
         setCategoryData(macData);
+        break;
+      case "iPhone":
+        setCategoryData(iPhoneData);
+        break;
+      case "iPad":
+        setCategoryData(iPadData);
+        break;
+      case "watch":
+        setCategoryData(watchData);
+        break;
+      case "airPods":
+        setCategoryData(airPodsData);
         break;
 
       default:
@@ -36,8 +54,12 @@ const CategoryContent = ({ category }) => {
   };
 
   return (
-    <main className="max-w-7xl mx-auto">
-      <div className="relative group">
+    <main>
+      <div
+        className={`relative flex justify-center group ${
+          category === "watch" && "bg-black"
+        } ${category === "watch" && "text-white"}`}
+      >
         {moving && (
           <AiOutlineLeft
             className="absolute cursor-pointer left-0 opacity-0 group-hover:opacity-100  top-[50%] translate-y-[-50%] text-lg bg-[#d6ddf4] h-full z-20"
@@ -45,7 +67,7 @@ const CategoryContent = ({ category }) => {
           />
         )}
         <div
-          className="flex items-center gap-4 px-4 overflow-y-scroll scrollbar-hide justify-between"
+          className="flex items-center gap-4 px-4 overflow-y-scroll scrollbar-hide"
           ref={categoryRef}
         >
           {categoryData?.map((data, index) => (
@@ -58,7 +80,7 @@ const CategoryContent = ({ category }) => {
                 />
               </div>
 
-              <p className="mt-4 text-center text-sm">{data.name}</p>
+              <p className="mt-4 text-center text-[12px]">{data.name}</p>
             </div>
           ))}
         </div>

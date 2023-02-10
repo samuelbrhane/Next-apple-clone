@@ -8,7 +8,7 @@ const Header = () => {
   const [showMenuProducts, setShowMenuProducts] = useState(false);
   return (
     <>
-      <div className="bg-black h-12 sticky top-0 text-gray-200 w-full z-50">
+      <div className="bg-[#1d1f1d] h-12 sticky top-0 text-gray-200 w-full z-50">
         <div className="px-4 py-2 md:px-12 lg:px-20 flex items-center justify-between h-full w-full text-2xl cursor-pointer">
           <div
             className="md:hidden"
@@ -19,11 +19,11 @@ const Header = () => {
 
           <AiFillApple />
           <div className="hidden md:flex flex-grow items-center gap-6  mx-2 justify-center text-[16px] text-gray-300 font-light">
-            <Link href="/Mac">Mac</Link>
+            <Link href="/mac">Mac</Link>
             <Link href="/iPad">iPad</Link>
             <Link href="/iPhone">iPhone</Link>
-            <Link href="/Watch">Watch</Link>
-            <Link href="/Airpods">Airpods</Link>
+            <Link href="/watch">Watch</Link>
+            <Link href="/airPods">AirPods</Link>
           </div>
           <div className="flex items-center gap-6 lg:gap-8 text-xl">
             <AiOutlineSearch className="hidden md:inline" />
@@ -34,7 +34,7 @@ const Header = () => {
       {/* Menu Products */}
 
       <div
-        className={`fixed  w-fill  bg-black text-white md:hidden ${
+        className={`fixed  w-fill  bg-black text-white md:hidden z-50 ${
           showMenuProducts ? "showContents" : "hideContents"
         }`}
       >
@@ -49,7 +49,7 @@ const Header = () => {
           </div>
         </div>
         <div className="px-10 flex flex-col gap-6 text-xl font-light pt-4 text-gray-300">
-          <Link href="/Mac" className="border-b-2 pb-1 cursor-pointer">
+          <Link href="/mac" className="border-b-2 pb-1 cursor-pointer">
             Mac
           </Link>
           <Link href="/iPad" className="border-b-2 pb-1 cursor-pointer">
@@ -58,11 +58,11 @@ const Header = () => {
           <Link href="/iPhone" className="border-b-2 pb-1 cursor-pointer">
             iPhone
           </Link>
-          <Link href="/Watch" className="border-b-2 pb-1 cursor-pointer">
+          <Link href="/watch" className="border-b-2 pb-1 cursor-pointer">
             Watch
           </Link>
-          <Link href="/Airpods" className="border-b-2 pb-1 cursor-pointer">
-            Airpods
+          <Link href="/airPods" className="border-b-2 pb-1 cursor-pointer">
+            AirPods
           </Link>
         </div>
       </div>
