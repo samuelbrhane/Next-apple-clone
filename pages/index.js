@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { Header, Iphone14Pro } from "../components";
-import { AiFillApple } from "react-icons/ai";
+import { Header } from "../components";
+import { HomeImage } from "../components/home";
 
 export default function Home() {
   return (
@@ -15,8 +15,22 @@ export default function Home() {
         {/* Header */}
         <Header />
 
-        {/* iPhone 14 Pro*/}
-        <Iphone14Pro />
+        {/* Home Images */}
+        {/* iPhone 14 Pro */}
+        <HomeImage
+          name="iPhone 14 Pro"
+          title="Pro. Beyond."
+          image="/img/iPhone14_pro.jpg"
+          background={false}
+        />
+
+        {/* iPhone 14 */}
+        <HomeImage
+          name="iPhone 14"
+          title="Big and bigger."
+          image="/img/iPhone14.jpg"
+          background={true}
+        />
       </main>
     </>
   );
