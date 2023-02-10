@@ -18,7 +18,6 @@ const Header = () => {
 
           <AiFillApple />
           <div className="hidden md:flex flex-grow items-center gap-6  mx-2 justify-center text-[16px] text-gray-300 font-light">
-            <p>Store</p>
             <p>Mac</p>
             <p>iPad</p>
             <p>iPhone</p>
@@ -50,7 +49,6 @@ const Header = () => {
           </div>
         </div>
         <div className="px-10 flex flex-col gap-6 text-xl font-light pt-4 text-gray-300">
-          <p className="border-b-2 pb-1 cursor-pointer">Store</p>
           <p className="border-b-2 pb-1 cursor-pointer">Mac</p>
           <p className="border-b-2 pb-1 cursor-pointer">iPad</p>
           <p className="border-b-2 pb-1 cursor-pointer">iPhone</p>

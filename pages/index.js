@@ -39,13 +39,11 @@ export default function Home() {
           name="WATCH"
           title="A healthy leap ahead."
           image="/img/apple_watch.jpg"
-          text={false}
         />
         <HeroImage
           name="HomePod"
           title="Profound sound."
           image="/img/homepod.jpg"
-          text={false}
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:px-4 h-[85vh] md:h-[65vh] lg:h-[80vh] mb-4">
@@ -53,13 +51,29 @@ export default function Home() {
           name="Creativity and community"
           title="Explore the new Black Unity watch."
           image="/img/promo_bhm.jpg"
-          text={false}
         />
         <HeroImage
           name="Valentine's Day"
           title="Sealed with a gift."
           image="/img/promo_valentines.jpg"
           text={true}
+        />
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:px-4 h-[85vh] md:h-[65vh] lg:h-[80vh] mb-4">
+        <HeroImage
+          name="Apple for K-12"
+          title="Product designed to inspire learners and educators."
+          image="/img/promo_education.jpg"
+          text={true}
+          background={true}
+        />
+        <HeroImage
+          name="Card"
+          title="Get up to 3% Daily Cash back with every purchase."
+          image="/img/apple_card.jpg"
+          text={true}
+          background={true}
         />
       </div>
     </>

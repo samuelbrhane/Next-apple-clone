@@ -2,10 +2,12 @@ import Image from "next/legacy/image";
 import React from "react";
 import { AiOutlineRight } from "react-icons/ai";
 
-const HeroImage = ({ name, title, image, text }) => {
+const HeroImage = ({ name, title, image, text, background }) => {
   return (
     <div
-      className={`relative w-full h-full ${text ? "text-black" : "text-white"}`}
+      className={`relative w-full text-white h-full ${text && "text-black"} ${
+        background && "bg-white"
+      }`}
     >
       <Image src={image} alt="storeImages" objectFit="cover" layout="fill" />
       <div className="absolute top-4 left-[50%] translate-x-[-50%]">
@@ -13,10 +15,17 @@ const HeroImage = ({ name, title, image, text }) => {
           {name}
         </p>
         <p className="text-center text-sm lg:text-lg">{title}</p>
-        <div className="flex items-center mt-2 justify-center text-sm text-blue-500">
-          <p className="text-xl ml-2">Buy</p>
-          <AiOutlineRight className="mt-1" />
-        </div>
+        {background ? (
+          <div className="flex items-center mt-2 justify-center text-sm text-blue-500">
+            <p className="text-xl ml-2">Learn more</p>
+            <AiOutlineRight className="mt-1" />
+          </div>
+        ) : (
+          <div className="flex items-center mt-2 justify-center text-sm text-blue-500">
+            <p className="text-xl ml-2">Buy</p>
+            <AiOutlineRight className="mt-1" />
+          </div>
+        )}
       </div>
     </div>
   );
