@@ -1,4 +1,4 @@
-const macData = [
+const macItems = [
   {
     name: "MacBook Air",
     image: "/img/mac/macbookair.svg",
@@ -37,7 +37,7 @@ const macData = [
   },
 ];
 
-const iPadData = [
+const iPadItems = [
   {
     name: "iPad Pro",
     image: "/img/iPad/ipadpro.svg",
@@ -80,7 +80,7 @@ const iPadData = [
   },
 ];
 
-const iPhoneData = [
+const iPhoneItems = [
   {
     name: "iPhone 14 Pro",
     image: "/img/iPhone/iphone_14_pro.svg",
@@ -131,7 +131,7 @@ const iPhoneData = [
   },
 ];
 
-const watchData = [
+const watchItems = [
   {
     name: "Apple Ultra",
     image: "/img/watch/ultra.svg",
@@ -182,7 +182,7 @@ const watchData = [
   },
 ];
 
-const airPodsData = [
+const airPodsItems = [
   {
     name: "AirPods 2nd Generation",
     image: "/img/airPods/2gen.svg",
@@ -209,4 +209,4 @@ const airPodsData = [
   },
 ];
 
-export { macData, watchData, iPadData, iPhoneData, airPodsData };
+export { macItems, watchItems, iPadItems, iPhoneItems, airPodsItems };

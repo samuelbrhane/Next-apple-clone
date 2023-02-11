@@ -1,3 +1,4 @@
 import CategoryContent from "./CategoryContent";
+import CategoryItems from "./CategoryItems";
 
-export { CategoryContent };
+export { CategoryContent, CategoryItems };
