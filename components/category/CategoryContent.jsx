@@ -18,28 +18,34 @@ import {
 const CategoryContent = ({ category }) => {
   const [categoryItems, setCategoryItems] = useState(null);
   const [categoryImages, setCategoryImages] = useState(null);
+  const [categoryText, setCategoryText] = useState(null);
 
   useEffect(() => {
     switch (category) {
       case "mac":
         setCategoryItems(macItems);
         setCategoryImages(macImageData);
+        setCategoryText("Mac");
         break;
       case "iPhone":
         setCategoryItems(iPhoneItems);
         setCategoryImages(iPhoneImageData);
+        setCategoryText("iPhone");
         break;
       case "iPad":
         setCategoryItems(iPadItems);
         setCategoryImages(iPadImageData);
+        setCategoryText("iPad");
         break;
       case "watch":
         setCategoryItems(watchItems);
         setCategoryImages(watchImageData);
+        setCategoryText("Apple Watch");
         break;
       case "airPods":
         setCategoryItems(airPodsItems);
         setCategoryImages(airPodsImageData);
+        setCategoryText("AirPod");
         break;
 
       default:
@@ -58,6 +64,9 @@ const CategoryContent = ({ category }) => {
         </p>
       </div>
       <CategoryImage categoryImages={categoryImages} category={category} />
+      <h1 className="text-center mt-4 font-bold text-xl md:text-3xl lg:text-5xl mb-3">
+        Which {categoryText} is right for you?
+      </h1>
     </main>
   );
 };

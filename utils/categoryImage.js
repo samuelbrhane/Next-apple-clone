@@ -27,6 +27,7 @@ const watchImageData = [
     desc: "A healthy leap ahead.",
     price: "399",
     image: "/img/watch/category/tile_s8.jpg",
+    decrease: true,
   },
 ];
 const iPhoneImageData = [

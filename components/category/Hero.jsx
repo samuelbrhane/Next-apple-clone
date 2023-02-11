@@ -3,7 +3,8 @@ import { AiOutlineRight } from "react-icons/ai";
 import Image from "next/legacy/image";
 
 const Hero = ({ data }) => {
-  const { name, desc, price, image, background, unique, watch } = data;
+  const { name, desc, price, image, background, unique, watch, decrease } =
+    data;
   return (
     <div
       className={`w-full  h-[100vh]   px-4 ${
@@ -12,7 +13,7 @@ const Hero = ({ data }) => {
     >
       <div className="shadow-md w-full h-full flex justify-center items-center mb-4">
         <div
-          className={`relative w-full  ${
+          className={`relative w-full ${decrease && "md:!w-[350px]"}  ${
             watch ? "md:full" : "md:w-[700px]"
           } h-full`}
         >
