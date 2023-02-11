@@ -1,4 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { CategoryItems, CategoryImage } from ".";
+import {
+  macImageData,
+  watchImageData,
+  iPadImageData,
+  iPhoneImageData,
+  airPodsImageData,
+} from "../../utils/categoryImage";
 import {
   macItems,
   watchItems,
@@ -7,27 +15,31 @@ import {
   airPodsItems,
 } from "../../utils/categories";
 
-import CategoryItems from "./CategoryItems";
-
 const CategoryContent = ({ category }) => {
-  const [categoryData, setCategoryData] = useState(null);
+  const [categoryItems, setCategoryItems] = useState(null);
+  const [categoryImages, setCategoryImages] = useState(null);
 
   useEffect(() => {
     switch (category) {
       case "mac":
-        setCategoryData(macItems);
+        setCategoryItems(macItems);
+        setCategoryImages(macImageData);
         break;
       case "iPhone":
-        setCategoryData(iPhoneItems);
+        setCategoryItems(iPhoneItems);
+        setCategoryImages(iPhoneImageData);
         break;
       case "iPad":
-        setCategoryData(iPadItems);
+        setCategoryItems(iPadItems);
+        setCategoryImages(iPadImageData);
         break;
       case "watch":
-        setCategoryData(watchItems);
+        setCategoryItems(watchItems);
+        setCategoryImages(watchImageData);
         break;
       case "airPods":
-        setCategoryData(airPodsItems);
+        setCategoryItems(airPodsItems);
+        setCategoryImages(airPodsImageData);
         break;
 
       default:
@@ -37,14 +49,15 @@ const CategoryContent = ({ category }) => {
 
   return (
     <main>
-      <CategoryItems categoryData={categoryData} category={category} />
-      <div className="flex justify-center px-4 md:px-8 py-2 bg-[#d1d5d3] text-sm font-light">
+      <CategoryItems categoryItems={categoryItems} category={category} />
+      <div className="flex justify-center px-4 md:px-8 py-3 bg-[#d1d5d3] text-[10px] sm:text-sm font-light">
         <p className="text-center">
           Get 3% Daily Cash back with Apple Card. And pay for your new Apple
           product over 12 months, interest&#8211;free when you choose to check
           out with Apple Card Monthly Installments.
         </p>
       </div>
+      <CategoryImage categoryImages={categoryImages} category={category} />
     </main>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
-const CategoryItems = ({ categoryData, category }) => {
+const CategoryItems = ({ categoryItems, category }) => {
   const [moving, setMoving] = useState(false);
   const categoryRef = useRef(null);
   const handleScroll = (direction) => {
@@ -36,7 +36,7 @@ const CategoryItems = ({ categoryData, category }) => {
         className="flex items-center gap-4 px-4 overflow-y-scroll scrollbar-hide"
         ref={categoryRef}
       >
-        {categoryData?.map((data, index) => (
+        {categoryItems?.map((data, index) => (
           <div key={index}>
             <div className="w-[100px] h-[70px] mt-2">
               <img className="w-full h-full" src={data.image} alt="itemImage" />

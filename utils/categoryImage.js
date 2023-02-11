@@ -19,18 +19,14 @@ const watchImageData = [
     desc: "Adventure awaits.",
     price: "799",
     image: "/img/watch/category/ultra.jpg",
+    unique: true,
+    watch: true,
   },
   {
     name: "Apple Series 8",
     desc: "A healthy leap ahead.",
     price: "399",
     image: "/img/watch/category/tile_s8.jpg",
-  },
-  {
-    name: "Apple SE",
-    desc: "A great deal to love.",
-    price: "249",
-    image: "/img/watch/category/watch_se.jpg",
   },
 ];
 const iPhoneImageData = [
@@ -45,6 +41,7 @@ const iPhoneImageData = [
     desc: "Big and bigger.",
     price: "799",
     image: "/img/iPhone/category/iPhone14.jpg",
+    background: true,
   },
 ];
 const iPadImageData = [
@@ -53,6 +50,7 @@ const iPadImageData = [
     desc: "Lovable.Drawable.Magical.",
     price: "499",
     image: "/img/iPad/category/hero.jpg",
+    background: true,
   },
   {
     name: "iPad Pro",
@@ -67,12 +65,14 @@ const airPodsImageData = [
     desc: "3rd generation.",
     price: "169",
     image: "/img/airPods/category/3rd_gen.jpg",
+    background: true,
   },
   {
     name: "Mac mini",
     desc: "More muscle.More hustle.",
     price: "599",
-    image: "/img/airPods/category/max.jpg",
+    image: "/img/airPods/category/max.png",
+    background: true,
   },
 ];
 

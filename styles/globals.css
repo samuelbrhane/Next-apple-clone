@@ -10,4 +10,7 @@
   .hideContents {
     @apply top-[-999px] left-0  right-0 transition-all duration-[2.5s];
   }
+  .watch {
+    @apply !text-black !bg-gray-100;
+  }
 }
