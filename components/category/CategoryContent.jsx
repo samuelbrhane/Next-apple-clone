@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { CategoryItems, CategoryImage } from ".";
+import { CategoryItems, CategoryImage, CategoryDetails } from ".";
 import {
   macImageData,
   watchImageData,
@@ -15,9 +15,18 @@ import {
   airPodsItems,
 } from "../../utils/categories";
 
+import {
+  macDescData,
+  watchDescData,
+  iPadDescData,
+  iPhoneDescData,
+  airPodsDescData,
+} from "../../utils/categoryDesc";
+
 const CategoryContent = ({ category }) => {
   const [categoryItems, setCategoryItems] = useState(null);
   const [categoryImages, setCategoryImages] = useState(null);
+  const [categoryDescription, setCategoryDescription] = useState(null);
   const [categoryText, setCategoryText] = useState(null);
 
   useEffect(() => {
@@ -25,26 +34,31 @@ const CategoryContent = ({ category }) => {
       case "mac":
         setCategoryItems(macItems);
         setCategoryImages(macImageData);
+        setCategoryDescription(macDescData);
         setCategoryText("Mac");
         break;
       case "iPhone":
         setCategoryItems(iPhoneItems);
         setCategoryImages(iPhoneImageData);
+        setCategoryDescription(iPhoneDescData);
         setCategoryText("iPhone");
         break;
       case "iPad":
         setCategoryItems(iPadItems);
         setCategoryImages(iPadImageData);
+        setCategoryDescription(iPadDescData);
         setCategoryText("iPad");
         break;
       case "watch":
         setCategoryItems(watchItems);
         setCategoryImages(watchImageData);
+        setCategoryDescription(watchDescData);
         setCategoryText("Apple Watch");
         break;
       case "airPods":
         setCategoryItems(airPodsItems);
         setCategoryImages(airPodsImageData);
+        setCategoryDescription(airPodsDescData);
         setCategoryText("AirPod");
         break;
 
@@ -67,6 +81,10 @@ const CategoryContent = ({ category }) => {
       <h1 className="text-center mt-4 font-bold text-xl md:text-3xl lg:text-5xl mb-3">
         Which {categoryText} is right for you?
       </h1>
+      <CategoryDetails
+        category={category}
+        categoryDescription={categoryDescription}
+      />
     </main>
   );
 };
