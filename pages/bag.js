@@ -1,9 +1,12 @@
 import Head from "next/head";
 import Image from "next/legacy/image";
-import React from "react";
+import React, { useState } from "react";
 import { Header } from "../components";
+import { BagRecommendation } from "../components/bag";
+import { recommendation } from "../utils/bagRecommendation";
 
 const Bag = () => {
+  const [index, setIndex] = useState(3);
   return (
     <div>
       <Head>
@@ -41,9 +44,24 @@ const Bag = () => {
             Need some help? <span className="text-blue-600">Chat now</span>{" "}
             (Opens in a new window)or call 1800&#8211;MY&#8211;APPLE.
           </h2>
-          <h1 className="font-bold mt-3 md:mt-5 text-lg md:text-2xl lg:text-4xl text-center">
+          <h1 className="font-bold mt-3 md:mt-5 text-2xl md:text-3xl lg:text-5xl text-center mb-3 md:mb-5">
             You may like
           </h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+            {recommendation?.slice(0, index)?.map((item, index) => (
+              <BagRecommendation item={item} key={index} />
+            ))}
+          </div>
+          {index < recommendation?.length && (
+            <div className="flex justify-center">
+              <button
+                className="text-sm mt-2 font-bold text-blue-500 hover:text-blue-400"
+                onClick={() => setIndex((prev) => prev + 3)}
+              >
+                Show More Products
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
