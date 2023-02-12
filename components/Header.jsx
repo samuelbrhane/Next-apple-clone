@@ -3,8 +3,10 @@ import { AiFillApple, AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
 import { BsBriefcase } from "react-icons/bs";
 import { useState } from "react";
 import Link from "next/link";
+import { useGlobalContextProvider } from "../contexts/BagContext";
 
 const Header = () => {
+  const { bagItems } = useGlobalContextProvider();
   const [showMenuProducts, setShowMenuProducts] = useState(false);
   return (
     <>
@@ -29,8 +31,13 @@ const Header = () => {
           </div>
           <div className="flex items-center gap-6 lg:gap-8 text-xl">
             <AiOutlineSearch className="hidden md:inline" />
-            <Link href="/bag">
+            <Link href="/bag" className="relative">
               <BsBriefcase />
+              {bagItems?.length > 0 && (
+                <p className="absolute -bottom-[0.5rem] -right-2 h-[20px] flex items-center justify-center bg-white text-black text-[10px] px-[0.4rem] rounded-full">
+                  {bagItems?.length}
+                </p>
+              )}
             </Link>
           </div>
         </div>
