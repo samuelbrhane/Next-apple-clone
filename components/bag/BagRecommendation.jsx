@@ -1,7 +1,9 @@
 import Image from "next/legacy/image";
 import React from "react";
+import { useGlobalContextProvider } from "../../contexts/BagContext";
 
 const BagRecommendation = ({ item }) => {
+  const { dispatch } = useGlobalContextProvider();
   const { name, image, price } = item;
   return (
     <div className="flex justify-center border-b-2 pb-3 pt-2">
@@ -15,7 +17,10 @@ const BagRecommendation = ({ item }) => {
             <p className="font bold text-center">${price}</p>
           </div>
           <div className="flex justify-center">
-            <button className="text-white bg-blue-600 py-2 px-6 md:px-10 rounded-md">
+            <button
+              className="text-white bg-blue-600 py-2 px-6 md:px-10 rounded-md"
+              onClick={() => dispatch({ type: "ADD_ITEM", payload: item })}
+            >
               Add to Bag
             </button>
           </div>

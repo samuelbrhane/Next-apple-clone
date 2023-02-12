@@ -49,7 +49,6 @@ const CategoryItems = ({ categoryItems, category }) => {
                   alt="itemImage"
                 />
               </div>
-
               <p className="mt-4 text-center text-[12px]">{data.name}</p>
             </div>
           );

@@ -24,7 +24,7 @@ const Footer = () => {
       </div>
 
       <div className="text-black md:hidden">
-        {footerData.map((data, index) => (
+        {footerData?.map((data, index) => (
           <Collapsible
             trigger={data.title}
             key={index}
@@ -39,7 +39,7 @@ const Footer = () => {
         ))}
       </div>
       <div className="grid-cols-4 hidden md:grid">
-        {footerData.map((data, index) => (
+        {footerData?.map((data, index) => (
           <div key={index} className="py-2 font-semibold">
             <h1 className="text-lg">{data.title}</h1>
             {data.content.map((cont, index) => (

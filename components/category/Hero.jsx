@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/legacy/image";
+import { useGlobalContextProvider } from "../../contexts/BagContext";
 
 const Hero = ({ data }) => {
   const {
@@ -15,6 +16,8 @@ const Hero = ({ data }) => {
     right,
     size,
   } = data;
+
+  const { dispatch } = useGlobalContextProvider();
   return (
     <div
       className={`w-full  h-[100vh]   px-4 ${
@@ -42,7 +45,10 @@ const Hero = ({ data }) => {
           <h1 className="font-semibold text-2xl md:3xl my-3">{desc}</h1>
           <p>From ${price}</p>
           <div className="flex justify-center">
-            <button className="flex items-center bg-blue-700 px-3 py-1 text-lg rounded-lg justify-center text-white">
+            <button
+              className="flex items-center bg-blue-700 px-3 py-1 text-lg rounded-lg justify-center text-white"
+              onClick={() => dispatch({ type: "ADD_ITEM", payload: data })}
+            >
               Buy
             </button>
           </div>
