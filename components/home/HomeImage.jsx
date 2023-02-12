@@ -1,8 +1,7 @@
 import Image from "next/legacy/image";
 import React from "react";
-import { AiOutlineRight } from "react-icons/ai";
 
-const HomeImage = ({ name, title, image, background }) => {
+const HomeImage = ({ name, title, image, background, price }) => {
   return (
     <div
       className={`w-full flex justify-center items-center  h-[80vh] ${
@@ -17,6 +16,10 @@ const HomeImage = ({ name, title, image, background }) => {
             {name}
           </h1>
           <h1 className="font-semibold text-2xl md:3xl">{title}</h1>
+
+          {price && (
+            <p className="text-center text-sm lg:text-lg  mt-1">${price}</p>
+          )}
 
           <div className="flex justify-center">
             <button className="flex items-center bg-blue-700 px-3 py-1 text-lg rounded-lg justify-center text-white">

@@ -2,7 +2,7 @@ import Image from "next/legacy/image";
 import React from "react";
 import { AiOutlineRight } from "react-icons/ai";
 
-const HeroImage = ({ name, title, image, text, background }) => {
+const HeroImage = ({ name, title, image, text, background, price }) => {
   return (
     <div
       className={`relative w-full text-white h-full ${text && "text-black"} ${
@@ -15,6 +15,10 @@ const HeroImage = ({ name, title, image, text, background }) => {
           {name}
         </p>
         <p className="text-center text-sm lg:text-lg">{title}</p>
+        {price && (
+          <p className="text-center text-sm lg:text-lg mb-4 mt-2">${price}</p>
+        )}
+
         {background ? (
           <div className="flex items-center mt-2 justify-center text-sm text-blue-500">
             <p className="text-xl ml-2">Learn more</p>

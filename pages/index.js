@@ -20,6 +20,7 @@ export default function Home() {
         <HomeImage
           name="iPhone 14 Pro"
           title="Pro. Beyond."
+          price="999"
           image="/img/iPhone14_pro.jpg"
           background={false}
         />
@@ -29,6 +30,7 @@ export default function Home() {
           name="iPhone 14"
           title="Big and bigger."
           image="/img/iPhone14.jpg"
+          price="799"
           background={true}
         />
       </main>
@@ -39,11 +41,13 @@ export default function Home() {
           name="WATCH"
           title="A healthy leap ahead."
           image="/img/apple_watch.jpg"
+          price="399"
         />
         <HeroImage
           name="HomePod"
           title="Profound sound."
           image="/img/homepod.jpg"
+          price="299"
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:px-4 h-[85vh] md:h-[65vh] lg:h-[80vh] mb-4">
@@ -51,12 +55,14 @@ export default function Home() {
           name="Creativity and community"
           title="Explore the new Black Unity watch."
           image="/img/promo_bhm.jpg"
+          price="249"
         />
         <HeroImage
           name="Valentine's Day"
           title="Sealed with a gift."
           image="/img/promo_valentines.jpg"
           text={true}
+          background={true}
         />
       </div>
 
