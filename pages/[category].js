@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../components";
+import { Footer, Header } from "../components";
 import { useRouter } from "next/router";
 import { CategoryContent } from "../components/category";
 
@@ -9,6 +9,7 @@ const Category = () => {
     <div>
       <Header />
       <CategoryContent category={router.query.category} />
+      <Footer />
     </div>
   );
 };

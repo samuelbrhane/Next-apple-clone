@@ -22,6 +22,8 @@ import {
   iPhoneDescData,
   airPodsDescData,
 } from "../../utils/categoryDesc";
+import { AiOutlineRight } from "react-icons/ai";
+import Image from "next/legacy/image";
 
 const CategoryContent = ({ category }) => {
   const [categoryItems, setCategoryItems] = useState(null);
@@ -85,6 +87,59 @@ const CategoryContent = ({ category }) => {
         category={category}
         categoryDescription={categoryDescription}
       />
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-4 border-t-2 pt-2">
+        <div className="flex items-center  justify-center mb-2">
+          <div className="flex flex-col w-[200px] items-center">
+            <div className="relative h-12 w-12">
+              <Image src="/img/delivery.png" alt="delivery" layout="fill" />
+            </div>
+            <h1 className="font-bold mt-2 mb-1">Fast delivery or pickup</h1>
+            <p className="text-center text-sm">
+              Enjoy two&#8211;hour delivery from an Apple Store, free delivery,
+              or easy pickup.
+            </p>
+            <div className="flex items-center mt-1 justify-center text-sm text-blue-500">
+              <p className="text-xl ml-2">Learn more</p>
+              <AiOutlineRight className="mt-1" />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-center  justify-center mb-2">
+          <div className="flex flex-col w-[200px] items-center">
+            <div className="relative h-12 w-12">
+              <Image src="/img/finance.svg" alt="delivery" layout="fill" />
+            </div>
+            <h1 className="font-bold mt-2 mb-1">Pay monthly at 0% APR</h1>
+            <p className="text-center text-sm">
+              You can pay over time when you choose to check out with Apple
+              Card.
+            </p>
+            <div className="flex items-center mt-1 justify-center text-sm text-blue-500">
+              <p className="text-xl ml-2">Learn more</p>
+              <AiOutlineRight className="mt-1" />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-center  justify-center mb-2">
+          <div className="flex flex-col w-[200px] items-center">
+            <div className="relative h-12 w-12">
+              <Image src="/img/help.svg" alt="delivery" layout="fill" />
+            </div>
+            <h1 className="font-bold mt-2 mb-1">Get help buying</h1>
+            <p className="text-center text-sm">
+              Have a question? Call a Specialist or chat online. Call
+              1800&#8211;&#8211;.
+            </p>
+            <div className="flex items-center mt-1 justify-center text-sm text-blue-500">
+              <p className="text-xl ml-2">Learn more</p>
+              <AiOutlineRight className="mt-1" />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 };
