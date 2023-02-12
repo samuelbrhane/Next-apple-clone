@@ -29,7 +29,9 @@ const Header = () => {
           </div>
           <div className="flex items-center gap-6 lg:gap-8 text-xl">
             <AiOutlineSearch className="hidden md:inline" />
-            <BsBriefcase />
+            <Link href="/bag">
+              <BsBriefcase />
+            </Link>
           </div>
         </div>
       </div>

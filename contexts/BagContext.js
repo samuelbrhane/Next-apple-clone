@@ -13,6 +13,10 @@ const reducer = (state, action) => {
   }
 };
 
+const initialState = {
+  bagItems: [],
+};
+
 const BagContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
