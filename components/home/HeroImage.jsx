@@ -1,8 +1,12 @@
 import Image from "next/legacy/image";
 import React from "react";
 import { AiOutlineRight } from "react-icons/ai";
+import { useGlobalContextProvider } from "../../contexts/BagContext";
 
-const HeroImage = ({ name, title, image, text, background, price }) => {
+const HeroImage = ({ item }) => {
+  const { name, title, image, text, background, price } = item;
+  const { dispatch } = useGlobalContextProvider();
+
   return (
     <div
       className={`relative w-full text-white h-full ${text && "text-black"} ${
@@ -26,7 +30,10 @@ const HeroImage = ({ name, title, image, text, background, price }) => {
           </div>
         ) : (
           <div className="flex justify-center">
-            <button className="flex items-center bg-blue-700 px-3 py-1 text-lg rounded-lg justify-center text-white">
+            <button
+              className="flex items-center bg-blue-700 px-3 py-1 text-lg rounded-lg justify-center text-white"
+              onClick={() => dispatch({ type: "ADD_ITEM", payload: item })}
+            >
               Buy
             </button>
           </div>

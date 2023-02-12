@@ -1,7 +1,11 @@
 import Image from "next/legacy/image";
 import React from "react";
+import { useGlobalContextProvider } from "../../contexts/BagContext";
 
-const HomeImage = ({ name, title, image, background, price }) => {
+const HomeImage = ({ item }) => {
+  const { dispatch } = useGlobalContextProvider();
+  const { name, title, image, background, price } = item;
+
   return (
     <div
       className={`w-full flex justify-center items-center  h-[80vh] ${
@@ -22,7 +26,10 @@ const HomeImage = ({ name, title, image, background, price }) => {
           )}
 
           <div className="flex justify-center">
-            <button className="flex items-center bg-blue-700 px-3 py-1 text-lg rounded-lg justify-center text-white">
+            <button
+              className="flex items-center bg-blue-700 px-3 py-1 text-lg rounded-lg justify-center text-white"
+              onClick={() => dispatch({ type: "ADD_ITEM", payload: item })}
+            >
               Buy
             </button>
           </div>

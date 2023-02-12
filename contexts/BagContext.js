@@ -2,19 +2,18 @@ import React, { useReducer, createContext, useContext } from "react";
 
 const BagContext = createContext();
 
+const initialState = {
+  bagItems: [],
+};
+
 const reducer = (state, action) => {
   const { type, payload } = action;
   switch (type) {
-    case value:
-      break;
-
+    case "ADD_ITEM":
+      return { ...state, bagItems: [...state.bagItems, payload] };
     default:
-      break;
+      return state;
   }
-};
-
-const initialState = {
-  bagItems: [],
 };
 
 const BagContextProvider = ({ children }) => {
