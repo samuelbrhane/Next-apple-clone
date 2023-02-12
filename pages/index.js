@@ -19,6 +19,7 @@ export default function Home() {
         {/* iPhone 14 Pro */}
         <HomeImage
           item={{
+            id: "fa7dea91-8fdb-456d-aecf-5f673959fd01",
             name: "iPhone 14 Pro",
             title: "Pro. Beyond.",
             price: "999",
@@ -30,6 +31,7 @@ export default function Home() {
         {/* iPhone 14 */}
         <HomeImage
           item={{
+            id: "fa7dea91-8fdb-456d-aecf-5f673959fd02",
             name: "iPhone 14",
             title: "Big and bigger.",
             image: "/img/iPhone14.jpg",
@@ -43,6 +45,7 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:px-4 my-4 h-[85vh] md:h-[65vh] lg:h-[80vh]">
         <HeroImage
           item={{
+            id: "fa7dea91-8fdb-456d-aecf-5f673959fd03",
             name: "WATCH",
             title: "A healthy leap ahead.",
             image: "/img/apple_watch.jpg",
@@ -51,6 +54,7 @@ export default function Home() {
         />
         <HeroImage
           item={{
+            id: "fa7dea91-8fdb-456d-aecf-5f673959fd04",
             name: "HomePod",
             title: "Profound sound.",
             image: "/img/homepod.jpg",
@@ -61,6 +65,7 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:px-4 h-[85vh] md:h-[65vh] lg:h-[80vh] mb-4">
         <HeroImage
           item={{
+            id: "fa7dea91-8fdb-456d-aecf-5f673959fd05",
             name: "Creativity and community",
             title: "Explore the new Black Unity watch.",
             image: "/img/promo_bhm.jpg",
@@ -69,6 +74,7 @@ export default function Home() {
         />
         <HeroImage
           item={{
+            id: "fa7dea91-8fdb-456d-aecf-5f673959fd06",
             name: "Valentine's Day",
             title: "Sealed with a gift.",
             image: "/img/promo_valentines.jpg",
@@ -81,6 +87,7 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:px-4 h-[85vh] md:h-[65vh] lg:h-[80vh] mb-4">
         <HeroImage
           item={{
+            id: "fa7dea91-8fdb-456d-aecf-5f673959fd07",
             name: "Apple for K-12",
             title: "Product designed to inspire learners and educators.",
             image: "/img/promo_education.jpg",
@@ -90,6 +97,7 @@ export default function Home() {
         />
         <HeroImage
           item={{
+            id: "fa7dea91-8fdb-456d-aecf-5f673959fd08",
             name: "Card",
             title: "Get up to 3% Daily Cash back with every purchase.",
             image: "/img/apple_card.jpg",

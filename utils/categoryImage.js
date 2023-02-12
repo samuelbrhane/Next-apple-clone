@@ -1,5 +1,6 @@
 const macImageData = [
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd70",
     name: "MacBook Pro",
     desc: "Mover.Maker.Boundary breaker.",
     price: "1999",
@@ -7,6 +8,7 @@ const macImageData = [
     size: true,
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd71",
     name: "Mac mini",
     desc: "More muscle.More hustle.",
     price: "599",
@@ -16,6 +18,7 @@ const macImageData = [
 
 const watchImageData = [
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd72",
     name: "Apple Ultra",
     desc: "Adventure awaits.",
     price: "799",
@@ -24,6 +27,7 @@ const watchImageData = [
     watch: true,
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd73",
     name: "Apple Series 8",
     desc: "A healthy leap ahead.",
     price: "399",
@@ -33,12 +37,14 @@ const watchImageData = [
 ];
 const iPhoneImageData = [
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd74",
     name: "iPhone 14 Pro",
     desc: "Pro.Beyond",
     price: "999",
     image: "/img/iPhone/category/iPhone14_pro.jpg",
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd75",
     name: "iPhone 14",
     desc: "Big and bigger.",
     price: "799",
@@ -48,6 +54,7 @@ const iPhoneImageData = [
 ];
 const iPadImageData = [
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd76",
     name: "iPad",
     desc: "Lovable.Drawable.Magical.",
     price: "499",
@@ -56,6 +63,7 @@ const iPadImageData = [
     right: true,
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd77",
     name: "iPad Pro",
     desc: "Supercharged by M2",
     price: "799",
@@ -64,6 +72,7 @@ const iPadImageData = [
 ];
 const airPodsImageData = [
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd78",
     name: "AirPods",
     desc: "3rd generation.",
     price: "169",
@@ -72,6 +81,7 @@ const airPodsImageData = [
     direction: true,
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd79",
     name: "Mac mini",
     desc: "More muscle.More hustle.",
     price: "599",

@@ -1,6 +1,7 @@
 // mac description data
 const macDescData = [
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd30",
     image: "/img/mac/desc/mba.png",
     name: "MacBook Air",
     desc: "M1 chip",
@@ -53,6 +54,7 @@ const macDescData = [
     ],
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd31",
     image: "/img/mac/desc/mbam2.png",
     name: "MacBook Air",
     desc: "M2 chip",
@@ -105,6 +107,7 @@ const macDescData = [
     ],
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd32",
     image: "/img/mac/desc/mbp13.png",
     name: 'MacBook Pro 13"',
     desc: "M2 chip",
@@ -157,6 +160,7 @@ const macDescData = [
     ],
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd33",
     image: "/img/mac/desc/mbp14.png",
     name: 'MacBook Pro 14"',
     desc: "M2 chip",
@@ -213,6 +217,7 @@ const macDescData = [
 // mac watch data
 const watchDescData = [
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd34",
     image: "/img/watch/desc/s8.jpg",
     name: "Apple Watch Series 8",
     desc: "",
@@ -254,6 +259,7 @@ const watchDescData = [
     ],
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd35",
     image: "/img/watch/desc/se.jpg",
     name: "Apple Watch SE",
     desc: "",
@@ -295,6 +301,7 @@ const watchDescData = [
     ],
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd36",
     image: "/img/watch/desc/s8.jpg",
     name: "Apple Watch Series 8",
     desc: "",
@@ -340,6 +347,7 @@ const watchDescData = [
 // iPad description data
 const iPadDescData = [
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd37",
     image: "/img/iPad/desc/pro.png",
     name: "iPad Pro",
     desc: "The ultimate iPad experience with the most advanced technology.",
@@ -385,6 +393,7 @@ const iPadDescData = [
     ],
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd38",
     image: "/img/iPad/desc/air.png",
     name: "iPad Air",
     desc: "Serious performance in a thin and light design.",
@@ -429,6 +438,7 @@ const iPadDescData = [
     ],
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd39",
     image: "/img/iPad/desc/ipad_1.png",
     name: "iPad\n10th generation",
     desc: "The all‑new colorful iPad for the things you do every day.",
@@ -473,6 +483,7 @@ const iPadDescData = [
     ],
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd40",
     image: "/img/iPad/desc/ipad_10.png",
     name: "iPad\n9th generation",
     desc: "All the essentials in the most affordable iPad.",
@@ -517,6 +528,7 @@ const iPadDescData = [
     ],
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd41",
     image: "/img/iPad/desc/mini.png",
     name: "iPad mini",
     desc: "The full iPad experience designed to fit in one hand.",
@@ -565,6 +577,7 @@ const iPadDescData = [
 // iPhone description data
 const iPhoneDescData = [
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd42",
     image: "/img/iPhone/desc/14_pro.jpg",
     name: "iPhone 14 Pro",
     desc: "The ultimate iPhone",
@@ -602,6 +615,7 @@ const iPhoneDescData = [
     ],
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd43",
     image: "/img/iPhone/desc/14.jpg",
     name: "iPhone 14",
     desc: "A total powerhouse.",
@@ -639,6 +653,7 @@ const iPhoneDescData = [
     ],
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd44",
     image: "/img/iPhone/desc/13.jpg",
     name: "iPhone 13",
     desc: "As amazing as ever.",
@@ -676,6 +691,7 @@ const iPhoneDescData = [
     ],
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd45",
     image: "/img/iPhone/desc/se.jpg",
     name: "iPhone SE",
     desc: "Serious power. Serious value.",
@@ -716,6 +732,7 @@ const iPhoneDescData = [
 // airPod description data
 const airPodsDescData = [
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd46",
     image: "/img/airPods/desc/2nd.png",
     name: "AirPods",
     desc: "2nd generation",
@@ -746,6 +763,7 @@ const airPodsDescData = [
   },
 
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd47",
     image: "/img/airPods/desc/3rd.png",
     name: "AirPods",
     desc: "3rd generation",
@@ -775,6 +793,7 @@ const airPodsDescData = [
     ],
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd48",
     image: "/img/airPods/desc/airpods.png",
     name: "AirPods Pro",
     desc: "2nd generation",
@@ -804,6 +823,7 @@ const airPodsDescData = [
     ],
   },
   {
+    id: "fa7dea91-8fdb-456d-aecf-5f673959fd49",
     image: "/img/airPods/desc/max.png",
     name: "AirPods Max",
     desc: "Max",
