@@ -12,6 +12,7 @@ const CategoryDetails = ({ category, categoryDescription }) => {
     >
       {categoryDescription?.map((item, index) => {
         const { image, name, desc, price, details } = item;
+
         return (
           <div key={index} className="mt-6 mb-6 flex justify-center">
             <div className="w-[230px] text-center r">
@@ -41,7 +42,7 @@ const CategoryDetails = ({ category, categoryDescription }) => {
                   <button
                     className="flex items-center bg-blue-700 px-3 py-1 text-lg rounded-lg justify-center text-white"
                     onClick={() =>
-                      dispatch({ type: "ADD_ITEM", Payload: item })
+                      dispatch({ type: "ADD_ITEM", payload: item })
                     }
                   >
                     Buy

@@ -2,18 +2,22 @@ import React, { useReducer, createContext, useContext } from "react";
 
 const BagContext = createContext();
 
-const initialState = {
-  bagItems: [],
-};
-
 const reducer = (state, action) => {
   const { type, payload } = action;
   switch (type) {
     case "ADD_ITEM":
-      return { ...state, bagItems: [...state.bagItems, payload] };
+      const findItem = state?.bagItems?.find((item) => item.id === payload.id);
+      if (!findItem)
+        return { ...state, bagItems: [...state.bagItems, payload] };
+      return state;
+
     default:
       return state;
   }
+};
+
+const initialState = {
+  bagItems: [],
 };
 
 const BagContextProvider = ({ children }) => {
