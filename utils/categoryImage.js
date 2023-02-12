@@ -4,6 +4,7 @@ const macImageData = [
     desc: "Mover.Maker.Boundary breaker.",
     price: "1999",
     image: "/img/mac/category/pro_14.jpg",
+    size: true,
   },
   {
     name: "Mac mini",
@@ -52,6 +53,7 @@ const iPadImageData = [
     price: "499",
     image: "/img/iPad/category/hero.jpg",
     background: true,
+    right: true,
   },
   {
     name: "iPad Pro",
@@ -67,6 +69,7 @@ const airPodsImageData = [
     price: "169",
     image: "/img/airPods/category/3rd_gen.jpg",
     background: true,
+    direction: true,
   },
   {
     name: "Mac mini",
@@ -74,6 +77,7 @@ const airPodsImageData = [
     price: "599",
     image: "/img/airPods/category/max.png",
     background: true,
+    direction: true,
   },
 ];
 

@@ -18,9 +18,10 @@ const HomeImage = ({ name, title, image, background }) => {
           </h1>
           <h1 className="font-semibold text-2xl md:3xl">{title}</h1>
 
-          <div className="flex items-center text-sm text-blue-500">
-            <p className="text-xl ml-2">Buy</p>
-            <AiOutlineRight className="mt-1" />
+          <div className="flex justify-center">
+            <button className="flex items-center bg-blue-700 px-3 py-1 text-lg rounded-lg justify-center text-white">
+              Buy
+            </button>
           </div>
         </div>
       </div>

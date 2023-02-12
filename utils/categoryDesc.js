@@ -269,11 +269,11 @@ const watchDescData = [
       },
       {
         tile: "-",
-        description: "",
+        description: "-",
       },
       {
         tile: "-",
-        description: "",
+        description: "-",
       },
       {
         img: "/img/watch/icons/heart.png",
@@ -473,7 +473,7 @@ const iPadDescData = [
     ],
   },
   {
-    image: "/img/iPad/desc/1pad_10.png",
+    image: "/img/iPad/desc/ipad_10.png",
     name: "iPad\n9th generation",
     desc: "All the essentials in the most affordable iPad.",
     price: "329",
@@ -806,7 +806,7 @@ const airPodsDescData = [
   {
     image: "/img/airPods/desc/max.png",
     name: "AirPods Max",
-    desc: "",
+    desc: "Max",
     price: "549",
     details: [
       {

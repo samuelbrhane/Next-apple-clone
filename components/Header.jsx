@@ -16,8 +16,10 @@ const Header = () => {
           >
             {showMenuProducts ? <AiOutlineClose /> : <HiOutlineMenuAlt1 />}
           </div>
+          <Link href="/">
+            <AiFillApple />
+          </Link>
 
-          <AiFillApple />
           <div className="hidden md:flex flex-grow items-center gap-6  mx-2 justify-center text-[16px] text-gray-300 font-light">
             <Link href="/mac">Mac</Link>
             <Link href="/iPad">iPad</Link>

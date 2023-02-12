@@ -6,7 +6,7 @@ const HeroImage = ({ name, title, image, text, background }) => {
   return (
     <div
       className={`relative w-full text-white h-full ${text && "text-black"} ${
-        background && "bg-white"
+        background && "bg-white !text-black"
       }`}
     >
       <Image src={image} alt="storeImages" objectFit="cover" layout="fill" />
@@ -21,9 +21,10 @@ const HeroImage = ({ name, title, image, text, background }) => {
             <AiOutlineRight className="mt-1" />
           </div>
         ) : (
-          <div className="flex items-center mt-2 justify-center text-sm text-blue-500">
-            <p className="text-xl ml-2">Buy</p>
-            <AiOutlineRight className="mt-1" />
+          <div className="flex justify-center">
+            <button className="flex items-center bg-blue-700 px-3 py-1 text-lg rounded-lg justify-center text-white">
+              Buy
+            </button>
           </div>
         )}
       </div>
