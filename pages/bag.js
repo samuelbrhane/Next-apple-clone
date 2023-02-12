@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/legacy/image";
 import React, { useState } from "react";
-import { Header } from "../components";
+import { Footer, Header } from "../components";
 import { BagRecommendation } from "../components/bag";
 import { recommendation } from "../utils/bagRecommendation";
 
@@ -64,6 +64,7 @@ const Bag = () => {
           )}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
