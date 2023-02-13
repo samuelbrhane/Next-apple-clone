@@ -2,7 +2,8 @@
 const macDescData = [
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd30",
-    image: "/img/mac/desc/mba.png",
+    image:
+      "https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_mba__fchj615oz0yi_large.png",
     name: "MacBook Air",
     desc: "M1 chip",
     price: "999",
@@ -55,7 +56,8 @@ const macDescData = [
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd31",
-    image: "/img/mac/desc/mbam2.png",
+    image:
+      "https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_mbam2__bdesjk99hf4i_large.png",
     name: "MacBook Air",
     desc: "M2 chip",
     price: "1199",
@@ -108,7 +110,8 @@ const macDescData = [
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd32",
-    image: "/img/mac/desc/mbp13.png",
+    image:
+      "https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_mbp13__euj5z15300om_large.png",
     name: 'MacBook Pro 13"',
     desc: "M2 chip",
     price: "1299",
@@ -161,7 +164,8 @@ const macDescData = [
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd33",
-    image: "/img/mac/desc/mbp14.png",
+    image:
+      "https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_mbp14_and_16__f2dhysusb5im_large.png",
     name: 'MacBook Pro 14"',
     desc: "M2 chip",
     price: "1999",
@@ -218,7 +222,8 @@ const macDescData = [
 const watchDescData = [
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd34",
-    image: "/img/watch/desc/s8.jpg",
+    image:
+      "https://www.apple.com/v/watch/bb/images/compare/compare_ultra__bzeon0dzb49y_large.jpg",
     name: "Apple Watch Series 8",
     desc: "",
     price: "399",
@@ -260,7 +265,8 @@ const watchDescData = [
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd35",
-    image: "/img/watch/desc/se.jpg",
+    image:
+      "https://www.apple.com/v/watch/bb/images/compare/compare_se__fjdos6x4rmmy_large.jpg",
     name: "Apple Watch SE",
     desc: "",
     price: "249",
@@ -302,7 +308,8 @@ const watchDescData = [
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd36",
-    image: "/img/watch/desc/s8.jpg",
+    image:
+      "https://www.apple.com/v/watch/bb/images/compare/compare_s8__q5ebcy3sahme_large.jpg",
     name: "Apple Watch Series 8",
     desc: "",
     price: "399",
@@ -348,7 +355,8 @@ const watchDescData = [
 const iPadDescData = [
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd37",
-    image: "/img/iPad/desc/pro.png",
+    image:
+      "https://www.apple.com/v/ipad/home/cd/images/overview/compare_ipad_pro__erf9x8mw04sy_large.png",
     name: "iPad Pro",
     desc: "The ultimate iPad experience with the most advanced technology.",
     price: "799",
@@ -394,7 +402,8 @@ const iPadDescData = [
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd38",
-    image: "/img/iPad/desc/air.png",
+    image:
+      "https://www.apple.com/v/ipad/home/cd/images/overview/compare_ipad_air__bxjv33pk6nte_large.png",
     name: "iPad Air",
     desc: "Serious performance in a thin and light design.",
     price: "599",
@@ -439,7 +448,8 @@ const iPadDescData = [
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd39",
-    image: "/img/iPad/desc/ipad_1.png",
+    image:
+      "https://www.apple.com/v/ipad/home/cd/images/overview/compare_ipad_10_9__f7p2wja0gwuy_large.png",
     name: "iPad\n10th generation",
     desc: "The all‑new colorful iPad for the things you do every day.",
     price: "499",
@@ -484,7 +494,8 @@ const iPadDescData = [
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd40",
-    image: "/img/iPad/desc/ipad_10.png",
+    image:
+      "https://www.apple.com/v/ipad/home/cd/images/overview/compare_ipad_10_2__fwgwy7jydtea_large.png",
     name: "iPad\n9th generation",
     desc: "All the essentials in the most affordable iPad.",
     price: "329",
@@ -529,7 +540,8 @@ const iPadDescData = [
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd41",
-    image: "/img/iPad/desc/mini.png",
+    image:
+      "https://www.apple.com/v/ipad/home/cd/images/overview/compare_ipad_mini__czcsk9ukpeie_large.png",
     name: "iPad mini",
     desc: "The full iPad experience designed to fit in one hand.",
     price: "499",
@@ -578,7 +590,8 @@ const iPadDescData = [
 const iPhoneDescData = [
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd42",
-    image: "/img/iPhone/desc/14_pro.jpg",
+    image:
+      "https://www.apple.com/v/iphone/home/bl/images/overview/compare/compare_iphone_14_pro__cjmfbiggqhpy_large.jpg",
     name: "iPhone 14 Pro",
     desc: "The ultimate iPhone",
     price: "999",
@@ -616,7 +629,8 @@ const iPhoneDescData = [
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd43",
-    image: "/img/iPhone/desc/14.jpg",
+    image:
+      "https://www.apple.com/v/iphone/home/bl/images/overview/compare/compare_iphone_14__ct4sjk962pea_large.jpg",
     name: "iPhone 14",
     desc: "A total powerhouse.",
     price: "799",
@@ -654,7 +668,8 @@ const iPhoneDescData = [
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd44",
-    image: "/img/iPhone/desc/13.jpg",
+    image:
+      "https://www.apple.com/v/iphone/home/bl/images/overview/compare/compare_iphone_13__fqzwhmfmroey_large.jpg",
     name: "iPhone 13",
     desc: "As amazing as ever.",
     price: "599",
@@ -692,7 +707,8 @@ const iPhoneDescData = [
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd45",
-    image: "/img/iPhone/desc/se.jpg",
+    image:
+      "https://www.apple.com/v/iphone/home/bl/images/overview/compare/compare_iphone_se__d5blqx1pgymq_large.jpg",
     name: "iPhone SE",
     desc: "Serious power. Serious value.",
     price: "429",
@@ -733,7 +749,8 @@ const iPhoneDescData = [
 const airPodsDescData = [
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd46",
-    image: "/img/airPods/desc/2nd.png",
+    image:
+      "https://www.apple.com/v/airpods/shared/compare/b/images/compare/compare_airpods_2nd_gen__fw52r8rxrpyu_large.png",
     name: "AirPods",
     desc: "2nd generation",
     price: "129",
@@ -764,7 +781,8 @@ const airPodsDescData = [
 
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd47",
-    image: "/img/airPods/desc/3rd.png",
+    image:
+      "https://www.apple.com/v/airpods/shared/compare/b/images/compare/compare_airpods_3rd_gen__dyuzfy04ht0m_large.png",
     name: "AirPods",
     desc: "3rd generation",
     price: "169",
@@ -794,7 +812,8 @@ const airPodsDescData = [
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd48",
-    image: "/img/airPods/desc/airpods.png",
+    image:
+      "https://www.apple.com/v/airpods/shared/compare/b/images/compare/compare_airpods_pro__e9uzt0mzviem_large.png",
     name: "AirPods Pro",
     desc: "2nd generation",
     price: "249",
@@ -824,7 +843,8 @@ const airPodsDescData = [
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd49",
-    image: "/img/airPods/desc/max.png",
+    image:
+      "https://www.apple.com/v/airpods/shared/compare/b/images/compare/compare_airpods_max__b14s2x6q07rm_large.png",
     name: "AirPods Max",
     desc: "Max",
     price: "549",

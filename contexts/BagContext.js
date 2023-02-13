@@ -51,7 +51,6 @@ const initialState = {
 
 const BagContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  console.log("state", state);
   return (
     <BagContext.Provider value={{ ...state, dispatch }}>
       {children}

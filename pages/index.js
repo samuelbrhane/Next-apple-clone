@@ -23,7 +23,8 @@ export default function Home() {
             name: "iPhone 14 Pro",
             title: "Pro. Beyond.",
             price: "999",
-            image: "/img/iPhone14_pro.jpg",
+            image:
+              "https://www.apple.com/v/home/ay/images/heroes/iphone-14-pro/hero_iphone14pro__e5xbgo5ffhg2_large.jpg",
             background: false,
           }}
         />
@@ -34,7 +35,8 @@ export default function Home() {
             id: "fa7dea91-8fdb-456d-aecf-5f673959fd02",
             name: "iPhone 14",
             title: "Big and bigger.",
-            image: "/img/iPhone14.jpg",
+            image:
+              "https://www.apple.com/v/home/ay/images/heroes/iphone-14/hero_iphone14__fjmsqstr1ceq_large.jpg",
             price: "799",
             background: true,
           }}
@@ -48,7 +50,8 @@ export default function Home() {
             id: "fa7dea91-8fdb-456d-aecf-5f673959fd03",
             name: "WATCH",
             title: "A healthy leap ahead.",
-            image: "/img/apple_watch.jpg",
+            image:
+              "https://www.apple.com/v/home/ay/images/promos/apple-watch-series-8/promo_apple_watch_series_8__ch7rexplmihe_large.jpg",
             price: "399",
           }}
         />
@@ -57,7 +60,8 @@ export default function Home() {
             id: "fa7dea91-8fdb-456d-aecf-5f673959fd04",
             name: "HomePod",
             title: "Profound sound.",
-            image: "/img/homepod.jpg",
+            image:
+              "https://www.apple.com/v/home/ay/images/promos/homepod/promo_homepod__f7jnolq94m2y_large.jpg",
             price: "299",
           }}
         />
@@ -68,7 +72,8 @@ export default function Home() {
             id: "fa7dea91-8fdb-456d-aecf-5f673959fd05",
             name: "Creativity and community",
             title: "Explore the new Black Unity watch.",
-            image: "/img/promo_bhm.jpg",
+            image:
+              "https://www.apple.com/v/home/ay/images/promos/watch-black-unity/promo_bhm__d8b9z5rlwjgy_large.jpg",
             price: "249",
           }}
         />

@@ -13,8 +13,8 @@ const Hero = ({ data }) => {
     watch,
     decrease,
     direction,
-    right,
     size,
+    phone,
   } = data;
 
   const { dispatch } = useGlobalContextProvider();
@@ -24,19 +24,21 @@ const Hero = ({ data }) => {
         background ? "text-black" : "text-white"
       } ${background ? "bg-white" : "bg-black"}  ${unique && "watch"} `}
     >
-      <div className="shadow-md w-full h-full flex justify-center items-center mb-4 relative">
+      <div className="shadow-md w-full h-full flex justify-center items-end mb-4 relative">
         <div
-          className={`relative ${size && "!h-[50%]"} w-full ${
+          className={` relative ${size && "!h-[50%]"} w-full ${
             decrease && "md:!w-[350px]"
-          }  ${watch ? "md:full" : "md:w-[700px]"} h-full`}
+          }  ${watch ? "md:full" : "md:w-[700px]"} h-[85%] flex items-end ${
+            phone && "!w-[40%]"
+          }`}
         >
           <Image src={image} alt="itemImage" layout="fill" />
         </div>
 
         <div
-          className={`absolute top-4 z-10 ${direction && "!pt-8"} ${
-            right && "md:!translate-x-[-30%] md:!top-36"
-          } left-[50%] translate-x-[-50%] w-full flex flex-col items-center gap-1 whitespace-nowrap`}
+          className={`absolute top-4 z-10 ${
+            direction && "!pt-8"
+          }  left-[50%] translate-x-[-50%] w-full flex flex-col items-center gap-1 whitespace-nowrap`}
         >
           <p className="font-bold text-yellow-400 text-3xl">New</p>
           <h1 className="font-extrabold text-3xl md:text-4xl lg:text-5xl">

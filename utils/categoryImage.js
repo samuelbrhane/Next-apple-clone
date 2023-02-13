@@ -4,7 +4,8 @@ const macImageData = [
     name: "MacBook Pro",
     desc: "Mover.Maker.Boundary breaker.",
     price: "1999",
-    image: "/img/mac/category/pro_14.jpg",
+    image:
+      "https://www.apple.com/v/mac/home/bs/images/overview/hero/macbook_pro_14_16__dmqm5vr9l7yq_large.jpg",
     size: true,
   },
   {
@@ -12,7 +13,8 @@ const macImageData = [
     name: "Mac mini",
     desc: "More muscle.More hustle.",
     price: "599",
-    image: "/img/mac/category/mini.jpg",
+    image:
+      "https://www.apple.com/v/mac/home/bs/images/overview/hero/mac_mini__d3310qb7lt6q_large.jpg",
   },
 ];
 
@@ -22,7 +24,8 @@ const watchImageData = [
     name: "Apple Ultra",
     desc: "Adventure awaits.",
     price: "799",
-    image: "/img/watch/category/ultra.jpg",
+    image:
+      "https://www.apple.com/v/watch/bb/images/overview/ultra/hero_ultra__bjuq9fkxb9ci_large.jpg",
     unique: true,
     watch: true,
   },
@@ -31,7 +34,8 @@ const watchImageData = [
     name: "Apple Series 8",
     desc: "A healthy leap ahead.",
     price: "399",
-    image: "/img/watch/category/tile_s8.jpg",
+    image:
+      "https://www.apple.com/v/watch/bb/images/overview/series-8/tile_s8__ck9oce5a22aa_large.jpg",
     decrease: true,
   },
 ];
@@ -41,14 +45,18 @@ const iPhoneImageData = [
     name: "iPhone 14 Pro",
     desc: "Pro.Beyond",
     price: "999",
-    image: "/img/iPhone/category/iPhone14_pro.jpg",
+    image:
+      "https://www.apple.com/v/iphone/home/bl/images/overview/hero/iphone_14_pro_hero__e4ivycyx40k2_large.jpg",
+    phone: true,
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd75",
     name: "iPhone 14",
     desc: "Big and bigger.",
     price: "799",
-    image: "/img/iPhone/category/iPhone14.jpg",
+    image:
+      "https://www.apple.com/v/iphone/home/bl/images/overview/hero/iphone_14_hero__ceub5xriecgi_large.jpg",
+    phone: true,
     background: true,
   },
 ];
@@ -58,16 +66,17 @@ const iPadImageData = [
     name: "iPad",
     desc: "Lovable.Drawable.Magical.",
     price: "499",
-    image: "/img/iPad/category/hero.jpg",
+    image:
+      "https://www.apple.com/v/ipad/home/cd/images/overview/hero/ipad_hero__d0tgmaq6shm6_large.jpg",
     background: true,
-    right: true,
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd77",
     name: "iPad Pro",
     desc: "Supercharged by M2",
     price: "799",
-    image: "/img/iPad/category/pro.jpg",
+    image:
+      "https://www.apple.com/v/ipad/home/cd/images/overview/hero/ipad_pro_hero__bh3eq6sqfjw2_large.jpg",
   },
 ];
 const airPodsImageData = [
@@ -76,7 +85,8 @@ const airPodsImageData = [
     name: "AirPods",
     desc: "3rd generation.",
     price: "169",
-    image: "/img/airPods/category/3rd_gen.jpg",
+    image:
+      "https://www.apple.com/v/airpods/t/images/overview/airpods_3rd_gen__dhy5bknhvtqq_large.jpg",
     background: true,
     direction: true,
   },
@@ -85,7 +95,8 @@ const airPodsImageData = [
     name: "Mac mini",
     desc: "More muscle.More hustle.",
     price: "599",
-    image: "/img/airPods/category/max.png",
+    image:
+      "https://www.apple.com/v/airpods/t/images/overview/airpods_max__f265q4g4ddym_large.png",
     background: true,
     direction: true,
   },
