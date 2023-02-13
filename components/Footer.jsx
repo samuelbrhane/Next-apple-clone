@@ -1,5 +1,4 @@
 import React from "react";
-import Collapsible from "react-collapsible";
 import footerData from "../footerData";
 
 const Footer = () => {
@@ -23,22 +22,7 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className="text-black md:hidden">
-        {footerData?.map((data, index) => (
-          <Collapsible
-            trigger={data.title}
-            key={index}
-            className="py-2 border-b-2 text-black font-semibold"
-          >
-            {data.content.map((cont, index) => (
-              <p className="text-gray-500" key={index}>
-                {cont}
-              </p>
-            ))}
-          </Collapsible>
-        ))}
-      </div>
-      <div className="grid-cols-4 hidden md:grid">
+      <div className="md:grid-cols-4 grid grid-cols-2">
         {footerData?.map((data, index) => (
           <div key={index} className="py-2 font-semibold">
             <h1 className="text-lg">{data.title}</h1>

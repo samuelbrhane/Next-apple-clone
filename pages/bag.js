@@ -14,8 +14,6 @@ const Bag = () => {
   const { bagItems } = useGlobalContextProvider();
   let total = 0;
 
-  console.log("bag", bagItems);
-
   // get total price from the bag
   bagItems?.map((item) => {
     total += parseFloat(item.price) * item.amount;
