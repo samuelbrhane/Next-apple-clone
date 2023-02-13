@@ -1,0 +1,4 @@
+NEXT_PUBLIC_STRIPE_PUBLIC_KEY=stripe public key
+NEXT_PUBLIC_STRIPE_SECRET_KEY=stripe secret key
+NEXT_PUBLIC_STRIPE_SIGNIN_SECRET= webhook signin secret
+NEXT_PUBLIC_HOST=http://localhost:3000 or host url
