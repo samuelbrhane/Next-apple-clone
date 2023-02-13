@@ -14,6 +14,32 @@ const reducer = (state, action) => {
         };
       return state;
 
+    case "INCREASE_ITEM":
+      return {
+        ...state,
+        bagItems: state.bagItems.map((item) => {
+          if (item.id === payload) return { ...item, amount: item.amount + 1 };
+          return item;
+        }),
+      };
+
+    case "DECREASE_ITEM":
+      return {
+        ...state,
+        bagItems: state.bagItems
+          .map((item) => {
+            if (item.id === payload)
+              return { ...item, amount: item.amount - 1 };
+            return item;
+          })
+          .filter((item) => item.amount > 0),
+      };
+
+    case "REMOVE_ITEM":
+      return {
+        ...state,
+        bagItems: state.bagItems.filter((item) => item.id !== payload),
+      };
     default:
       return state;
   }

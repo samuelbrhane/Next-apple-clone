@@ -13,7 +13,7 @@ const Bag = () => {
 
   // get total price from the bag
   bagItems?.map((item) => {
-    total += parseFloat(item.price);
+    total += parseFloat(item.price) * item.amount;
   });
 
   return (
@@ -53,7 +53,7 @@ const Bag = () => {
               <BagItem key={index} item={item} />
             ))}
             <div className="flex items-center flex-col sm:flex-row py-3 justify-between">
-              <div className="relative w-[80px] h-[80px] md:h-[140px] md:w-[140px]" />
+              <div className="relative w-[80px] h-[80px] md:h-[140px] md:w-[140px] hidden sm:inline" />
               <div className="w-[90%] sm:w-[75%]">
                 <div className="pb-2">
                   <div className="flex items-center justify-between">
@@ -74,7 +74,7 @@ const Bag = () => {
                 </div>
                 <div className="flex justify-between border-t-2 pt-2 font-bold md:text-lg">
                   <h1>Total</h1>
-                  <h1>${total}</h1>
+                  <h1>${total.toFixed(2)}</h1>
                 </div>
                 <div className="flex justify-end mb-6">
                   <p className="text-blue-500">
