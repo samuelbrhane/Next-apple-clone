@@ -2,11 +2,20 @@ import Head from "next/head";
 import Image from "next/legacy/image";
 import React, { useState } from "react";
 import { Footer, Header } from "../components";
-import { BagRecommendation } from "../components/bag";
+import { BagItem, BagRecommendation } from "../components/bag";
 import { recommendation } from "../utils/bagRecommendation";
+import { useGlobalContextProvider } from "../contexts/BagContext";
 
 const Bag = () => {
   const [index, setIndex] = useState(3);
+  const { bagItems } = useGlobalContextProvider();
+  let total = 0;
+
+  // get total price from the bag
+  bagItems?.map((item) => {
+    total += parseFloat(item.price);
+  });
+
   return (
     <div>
       <Head>
@@ -32,12 +41,50 @@ const Bag = () => {
             <span className="text-blue-500">Learn more</span>{" "}
           </p>
         </div>
-
-        <div>
-          <h1 className="font-bold mt-3 text-lg md:text-xl lg:text-2xl">
-            Your Apple Bag Is Empty.
-          </h1>
-        </div>
+        {!bagItems.length > 0 ? (
+          <div>
+            <h1 className="font-bold mt-3 text-lg md:text-xl lg:text-2xl">
+              Your Apple Bag Is Empty.
+            </h1>
+          </div>
+        ) : (
+          <div className="mt-4 md:mt-6 max-w-3xl mx-auto">
+            {bagItems?.map((item, index) => (
+              <BagItem key={index} item={item} />
+            ))}
+            <div className="flex items-center flex-col sm:flex-row py-3 justify-between">
+              <div className="relative w-[80px] h-[80px] md:h-[140px] md:w-[140px]" />
+              <div className="w-[90%] sm:w-[75%]">
+                <div className="pb-2">
+                  <div className="flex items-center justify-between">
+                    <h2>Subtotal</h2>
+                    <p>${total}</p>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <h2>Shipping</h2>
+                    <p>Free</p>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <h2>
+                      Estimated tax for:{" "}
+                      <span className="text-blue-500">Enter zip code</span>{" "}
+                    </h2>
+                    <p>$ -</p>
+                  </div>
+                </div>
+                <div className="flex justify-between border-t-2 pt-2 font-bold md:text-lg">
+                  <h1>Total</h1>
+                  <h1>${total}</h1>
+                </div>
+                <div className="flex justify-end mb-6">
+                  <p className="text-blue-500">
+                    Get Daily Cash with Apple Card
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
         <div className="mt-4">
           <h2 className="font-light  py-3 border-y-2">

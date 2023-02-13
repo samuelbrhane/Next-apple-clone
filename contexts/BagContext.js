@@ -8,7 +8,10 @@ const reducer = (state, action) => {
     case "ADD_ITEM":
       const findItem = state?.bagItems?.find((item) => item.id === payload.id);
       if (!findItem)
-        return { ...state, bagItems: [...state.bagItems, payload] };
+        return {
+          ...state,
+          bagItems: [...state.bagItems, { ...payload, amount: 1 }],
+        };
       return state;
 
     default:
