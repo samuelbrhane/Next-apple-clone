@@ -4,7 +4,7 @@ import { BsCheckCircleFill } from "react-icons/bs";
 import { Header } from "../components";
 import { useGlobalContextProvider } from "../contexts/BagContext";
 
-const success = () => {
+const Success = () => {
   const { dispatch } = useGlobalContextProvider();
   useEffect(() => {
     dispatch({ type: "REMOVE_ITEMS" });
@@ -39,4 +39,4 @@ const success = () => {
   );
 };
 
-export default success;
+export default Success;
