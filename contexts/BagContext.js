@@ -40,6 +40,12 @@ const reducer = (state, action) => {
         ...state,
         bagItems: state.bagItems.filter((item) => item.id !== payload),
       };
+
+    case "REMOVE_ITEMS":
+      return {
+        ...state,
+        bagItems: [],
+      };
     default:
       return state;
   }

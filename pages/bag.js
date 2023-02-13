@@ -5,16 +5,36 @@ import { Footer, Header } from "../components";
 import { BagItem, BagRecommendation } from "../components/bag";
 import { recommendation } from "../utils/bagRecommendation";
 import { useGlobalContextProvider } from "../contexts/BagContext";
+import { loadStripe } from "@stripe/stripe-js";
+import axios from "axios";
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY);
 
 const Bag = () => {
   const [index, setIndex] = useState(3);
   const { bagItems } = useGlobalContextProvider();
   let total = 0;
 
+  console.log("bag", bagItems);
+
   // get total price from the bag
   bagItems?.map((item) => {
     total += parseFloat(item.price) * item.amount;
   });
+
+  const createCheckoutSession = async () => {
+    const stripe = await stripePromise;
+    const checkoutSession = await axios.post("/api/create-checkout-session", {
+      bagItems,
+    });
+
+    const result = await stripe.redirectToCheckout({
+      sessionId: checkoutSession.data.id,
+    });
+
+    if (result.error) {
+      alert(result.error.message);
+    }
+  };
 
   return (
     <div>
@@ -82,6 +102,14 @@ const Bag = () => {
                   </p>
                 </div>
               </div>
+            </div>
+            <div className="flex justify-center">
+              <button
+                className="bg-blue-500 rounded py-2 px-10 md:px-16 lg:px-20 md:py-3 text-white font-bold text-lg"
+                onClick={createCheckoutSession}
+              >
+                Checkout
+              </button>
             </div>
           </div>
         )}

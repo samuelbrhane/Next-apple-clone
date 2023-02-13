@@ -12,7 +12,7 @@ const BagItem = ({ item }) => {
     <>
       <div className="flex items-center flex-col sm:flex-row border-b-4 py-3 md:py-5 justify-between">
         <div className="relative w-[80px] h-[80px] md:h-[140px] md:w-[140px]">
-          <Image src={image} alt="itemImage" layout="fill" />
+          <Image src={image} alt="itemImage" layout="fill" objectFit="cover" />
         </div>
         <div className="w-[90%] sm:w-[75%]">
           <div className="flex items-center border-b-2 justify-between py-2">
