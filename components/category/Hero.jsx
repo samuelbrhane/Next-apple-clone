@@ -9,52 +9,67 @@ const Hero = ({ data }) => {
     price,
     image,
     background,
+    firstMac,
+    secondMac,
+    firstIpad,
+    secondIpad,
+    firstIphone,
+    secondIphone,
+    firstWatch,
+    secondWatch,
+    firstPad,
+    secondPad,
     unique,
-    watch,
-    decrease,
-    direction,
-    size,
-    phone,
   } = data;
 
   const { dispatch } = useGlobalContextProvider();
   return (
     <div
-      className={`w-full  h-[100vh]   px-4 ${
-        background ? "text-black" : "text-white"
-      } ${background ? "bg-white" : "bg-black"}  ${unique && "watch"} `}
+      className={`w-full flex flex-col items-center justify-between mb-4 overflow-hidden shadow h-[80vh] md:h-[100vh] gap-4 p-4 ${
+        unique && "!bg-gray-100 !text-black"
+      } ${background ? "text-black bg-white" : "text-white bg-black"}  `}
     >
-      <div className="shadow-md w-full h-full flex justify-center items-end mb-4 relative">
-        <div
-          className={` relative ${size && "!h-[50%]"} w-full ${
-            decrease && "md:!w-[350px]"
-          }  ${watch ? "md:full" : "md:w-[700px]"} h-[85%] flex items-end ${
-            phone && "!w-[40%]"
-          }`}
-        >
-          <Image src={image} alt="itemImage" layout="fill" />
+      <div className="flex flex-col w-full justify-center items-center">
+        <p className="font-bold text-yellow-400 text-xl md:2xl">New</p>
+        <h1 className="font-extrabold text-xl md:text-2xl lg:text-3xl">
+          {name}
+        </h1>
+        <h1 className="font-semibold text-lg md:xl my-1">{desc}</h1>
+        <p>From ${price}</p>
+        <div className="flex justify-center">
+          <button
+            className="flex items-center bg-blue-700 px-3 py-1 text-lg rounded-lg justify-center text-white"
+            onClick={() => dispatch({ type: "ADD_ITEM", payload: data })}
+          >
+            Buy
+          </button>
         </div>
-
-        <div
-          className={`absolute top-4 z-10 ${
-            direction && "!pt-8"
-          }  left-[50%] translate-x-[-50%] w-full flex flex-col items-center gap-1 whitespace-nowrap`}
-        >
-          <p className="font-bold text-yellow-400 text-3xl">New</p>
-          <h1 className="font-extrabold text-3xl md:text-4xl lg:text-5xl">
-            {name}
-          </h1>
-          <h1 className="font-semibold text-2xl md:3xl my-3">{desc}</h1>
-          <p>From ${price}</p>
-          <div className="flex justify-center">
-            <button
-              className="flex items-center bg-blue-700 px-3 py-1 text-lg rounded-lg justify-center text-white"
-              onClick={() => dispatch({ type: "ADD_ITEM", payload: data })}
-            >
-              Buy
-            </button>
-          </div>
-        </div>
+      </div>
+      <div className="w-full h-[80%] flex justify-center items-center">
+        <img
+          src={image}
+          alt="itemImage"
+          className={`w-full h-full ${
+            firstMac && "!h-[50%] lg:!h-full lg:w-[80%] xl:!w-[60%]"
+          } ${secondMac && "lg:!w-[70%] xl:!w-[50%]"} ${
+            firstIpad &&
+            "!h-[70%] md:!h-[90%] lg:!h-[80%] lg:w-[40%] xl:!w-[60%] xl:!h-full"
+          } ${secondIpad && "h-[90%] lg:!w-[50%] xl:!w-[50%]"}
+          
+          ${
+            firstIphone &&
+            "!h-full w-[75%] md:!h-[90%] md:!w-[70%] lg:!h-[90%] lg:w-[35%] xl:!w-[40%] xl:!h-full"
+          } ${
+            secondIphone && "h-full w-[60%] md:w-[80%] lg:!w-[30%] xl:!w-[40%]"
+          }
+          ${firstWatch && "!h-full lg:w-[75%] xl:!w-[80%]"} ${
+            secondWatch && "h-full w-[60%] md:w-[50%] lg:!w-[30%]"
+          }
+          ${firstPad && "!h-full lg:w-[55%] xl:!w-[50%]"} ${
+            secondPad && "h-full w-[60%] md:w-[80%] lg:!w-[35%]"
+          }
+          `}
+        />
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ const macImageData = [
     price: "1999",
     image:
       "https://www.apple.com/v/mac/home/bs/images/overview/hero/macbook_pro_14_16__dmqm5vr9l7yq_large.jpg",
-    size: true,
+    firstMac: true,
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd71",
@@ -15,6 +15,7 @@ const macImageData = [
     price: "599",
     image:
       "https://www.apple.com/v/mac/home/bs/images/overview/hero/mac_mini__d3310qb7lt6q_large.jpg",
+    secondMac: true,
   },
 ];
 
@@ -26,8 +27,8 @@ const watchImageData = [
     price: "799",
     image:
       "https://www.apple.com/v/watch/bb/images/overview/ultra/hero_ultra__bjuq9fkxb9ci_large.jpg",
+    firstWatch: true,
     unique: true,
-    watch: true,
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd73",
@@ -36,7 +37,7 @@ const watchImageData = [
     price: "399",
     image:
       "https://www.apple.com/v/watch/bb/images/overview/series-8/tile_s8__ck9oce5a22aa_large.jpg",
-    decrease: true,
+    secondWatch: true,
   },
 ];
 const iPhoneImageData = [
@@ -47,7 +48,7 @@ const iPhoneImageData = [
     price: "999",
     image:
       "https://www.apple.com/v/iphone/home/bl/images/overview/hero/iphone_14_pro_hero__e4ivycyx40k2_large.jpg",
-    phone: true,
+    firstIphone: true,
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd75",
@@ -56,7 +57,7 @@ const iPhoneImageData = [
     price: "799",
     image:
       "https://www.apple.com/v/iphone/home/bl/images/overview/hero/iphone_14_hero__ceub5xriecgi_large.jpg",
-    phone: true,
+    secondIphone: true,
     background: true,
   },
 ];
@@ -69,6 +70,7 @@ const iPadImageData = [
     image:
       "https://www.apple.com/v/ipad/home/cd/images/overview/hero/ipad_hero__d0tgmaq6shm6_large.jpg",
     background: true,
+    firstIpad: true,
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd77",
@@ -77,6 +79,7 @@ const iPadImageData = [
     price: "799",
     image:
       "https://www.apple.com/v/ipad/home/cd/images/overview/hero/ipad_pro_hero__bh3eq6sqfjw2_large.jpg",
+    secondIpad: true,
   },
 ];
 const airPodsImageData = [
@@ -87,8 +90,8 @@ const airPodsImageData = [
     price: "169",
     image:
       "https://www.apple.com/v/airpods/t/images/overview/airpods_3rd_gen__dhy5bknhvtqq_large.jpg",
+    firstPad: true,
     background: true,
-    direction: true,
   },
   {
     id: "fa7dea91-8fdb-456d-aecf-5f673959fd79",
@@ -97,8 +100,7 @@ const airPodsImageData = [
     price: "599",
     image:
       "https://www.apple.com/v/airpods/t/images/overview/airpods_max__f265q4g4ddym_large.png",
-    background: true,
-    direction: true,
+    secondPad: true,
   },
 ];
 
